@@ -8,6 +8,6 @@ def cal_time(fn):
         start_time = time.time()
         f = fn(*args, **kwargs)
         end_time = time.time()
-        print("%s() runtime: %s ms" % (fn.__name__, 1000*(end_time - start_time)))
+        print("%s() running time: %s ms" % (fn.__name__, 1000*(end_time - start_time)))
         return f
     return wrapper
